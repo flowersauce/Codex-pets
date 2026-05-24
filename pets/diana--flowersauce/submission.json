@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "petId": "diana--flowersauce",
+  "name": "Diana",
+  "author": {
+    "name": "flowersauce",
+    "github": "flowersauce",
+    "url": "https://github.com/flowersauce"
+  },
+  "language": "zh-CN",
+  "description": "粉白偶像风像素宠物，灵感来自 Diana/Jiaran。",
+  "tags": [
+    "pixel-art",
+    "idol",
+    "fan-art"
+  ],
+  "category": "fan-art",
+  "license": {
+    "code": "MIT",
+    "assets": "Author-provided fan-art asset. See ASSET-LICENSE.md; not an official Diana/Jiaran asset."
+  },
+  "files": {
+    "runtime": "pet.json",
+    "spritesheet": "spritesheet.webp",
+    "previews": "../../assets/previews/diana--flowersauce"
+  },
+  "createdAt": "2026-05-25"
+}
