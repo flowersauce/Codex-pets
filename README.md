@@ -6,8 +6,7 @@
 
 <table>
 <tr><th>Name</th><td colspan="4"><a href="pets/diana--flowersauce">Diana</a> · by <a href="https://github.com/flowersauce">@flowersauce</a></td></tr>
-<tr><th>Package</th><td colspan="4"><code>pets/diana--flowersauce</code></td></tr>
-<tr><th>Description</th><td colspan="4">粉白偶像风像素宠物，灵感来自 Diana/Jiaran。非官方粉丝作品。</td></tr>
+<tr><th>About</th><td colspan="4"><a href="pets/diana--flowersauce"><code>pets/diana--flowersauce</code></a> · 粉白偶像风像素宠物，灵感来自 Diana/Jiaran。非官方粉丝作品。</td></tr>
 <tr><th>Action</th><td><strong>Idle</strong></td><td><strong>Running Right</strong></td><td><strong>Waving</strong></td><td><strong>Jumping</strong></td></tr>
 <tr><th>Preview</th><td><img src="assets/previews/diana--flowersauce/idle.gif" alt="Diana idle" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/running-right.gif" alt="Diana running right" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/waving.gif" alt="Diana waving" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/jumping.gif" alt="Diana jumping" width="120" height="130"></td></tr>
 </table>
