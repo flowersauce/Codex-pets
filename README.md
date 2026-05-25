@@ -13,7 +13,7 @@
 
 | idle | running-right | waving | jumping |
 | --- | --- | --- | --- |
-| ![Diana idle](assets/previews/diana--flowersauce/idle.gif) | ![Diana running right](assets/previews/diana--flowersauce/running-right.gif) | ![Diana waving](assets/previews/diana--flowersauce/waving.gif) | ![Diana jumping](assets/previews/diana--flowersauce/jumping.gif) |
+| <img src="assets/previews/diana--flowersauce/idle.gif" alt="Diana idle" width="192" height="208"> | <img src="assets/previews/diana--flowersauce/running-right.gif" alt="Diana running right" width="192" height="208"> | <img src="assets/previews/diana--flowersauce/waving.gif" alt="Diana waving" width="192" height="208"> | <img src="assets/previews/diana--flowersauce/jumping.gif" alt="Diana jumping" width="192" height="208"> |
 
 ## 安装方式
 
