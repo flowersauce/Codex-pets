@@ -11,21 +11,21 @@
 
 > 粉白偶像风像素宠物，灵感来自 Diana/Jiaran。非官方粉丝作品。
 
-| idle | running-right | running-left |
-| --- | --- | --- |
-| ![Diana idle](assets/previews/diana--flowersauce/idle.gif) | ![Diana running right](assets/previews/diana--flowersauce/running-right.gif) | ![Diana running left](assets/previews/diana--flowersauce/running-left.gif) |
+| idle | running-right | waving | jumping |
+| --- | --- | --- | --- |
+| ![Diana idle](assets/previews/diana--flowersauce/idle.gif) | ![Diana running right](assets/previews/diana--flowersauce/running-right.gif) | ![Diana waving](assets/previews/diana--flowersauce/waving.gif) | ![Diana jumping](assets/previews/diana--flowersauce/jumping.gif) |
 
-| waving | jumping | failed |
-| --- | --- | --- |
-| ![Diana waving](assets/previews/diana--flowersauce/waving.gif) | ![Diana jumping](assets/previews/diana--flowersauce/jumping.gif) | ![Diana failed](assets/previews/diana--flowersauce/failed.gif) |
+## 安装方式
 
-| waiting | running | review |
-| --- | --- | --- |
-| ![Diana waiting](assets/previews/diana--flowersauce/waiting.gif) | ![Diana running](assets/previews/diana--flowersauce/running.gif) | ![Diana review](assets/previews/diana--flowersauce/review.gif) |
+把 `pets/` 下的宠物文件夹整个复制到 Codex 的本地宠物目录，例如 `pets/diana--flowersauce` 这个文件夹需要原样放进去：
 
-完整联系表：
+```text
+Windows: %USERPROFILE%\.codex\pets\
+macOS:   ~/.codex/pets/
+Linux:   ~/.codex/pets/
+```
 
-![Diana contact sheet](assets/previews/diana--flowersauce/contact-sheet.png)
+复制后重启 Codex，或重新打开宠物选择界面，即可看到新宠物。
 
 ## 仓库结构
 
@@ -59,7 +59,7 @@ docs/
 python scripts/generate-previews.py
 ```
 
-该脚本会为每只宠物生成九个棋盘格背景动作 GIF，并自动过滤透明占位帧。生成的 `contact-sheet.png` 不过滤占位格，用来核对原始 atlas。
+该脚本会为每只宠物生成全部九个 `192x208` 的棋盘格背景动作 GIF，并自动过滤透明占位帧。README 只挑选四个代表动作展示；生成的 `contact-sheet.png` 使用单格像素排成 `9x9`，其中第一列是动作名称，用来核对原始 atlas。
 
 检查宠物包结构：
 

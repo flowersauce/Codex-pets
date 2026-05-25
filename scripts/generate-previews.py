@@ -110,10 +110,10 @@ def save_state_gif(
 
 
 def save_contact_sheet(sheet: Image.Image, out_path: Path, scale: int) -> None:
-    label_width = 150
     row_height = CELL_HEIGHT * scale
     frame_width = CELL_WIDTH * scale
-    width = label_width + COLUMNS * frame_width
+    label_width = frame_width
+    width = (COLUMNS + 1) * frame_width
     height = len(STATES) * row_height
     contact = checkerboard((width, height), block=16)
     draw = ImageDraw.Draw(contact)
@@ -157,7 +157,7 @@ def generate_for_pet(
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--scale", type=int, default=2, help="GIF scale factor.")
+    parser.add_argument("--scale", type=int, default=1, help="GIF scale factor.")
     parser.add_argument("--duration", type=int, default=120, help="GIF frame duration in milliseconds.")
     parser.add_argument("--background", default="checkerboard", help="GIF matte background: checkerboard or a CSS color.")
     args = parser.parse_args()

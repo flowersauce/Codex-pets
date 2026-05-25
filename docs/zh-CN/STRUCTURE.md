@@ -72,13 +72,13 @@ review
 assets/previews/<pet-id>/
 ```
 
-脚本会为每一行生成一个棋盘格背景 GIF，并额外生成 `contact-sheet.png`：
+脚本会为每一行生成一个 `192x208` 的棋盘格背景 GIF，并额外生成 `contact-sheet.png`：
 
 ```bash
 python scripts/generate-previews.py
 ```
 
-新增或替换 `spritesheet.webp` 后重新运行这条命令即可刷新 README 里的预览。GIF 会跳过完全透明的占位帧，并先把半透明边缘合成到透明棋盘格背景，避免 GIF 透明色造成边缘杂色；`contact-sheet.png` 会保留原始透明图集和占位格。
+新增或替换 `spritesheet.webp` 后重新运行这条命令即可刷新 README 里的预览。README 只挑选四个代表动作放在同一排展示，不展示其他 GIF 或 `contact-sheet.png`。GIF 会跳过完全透明的占位帧，并先把半透明边缘合成到透明棋盘格背景，避免 GIF 透明色造成边缘杂色；`contact-sheet.png` 会保留原始透明图集和占位格，并按 `9x9` 单格排列，其中第一列是动作名称。
 
 ## 校验
 
