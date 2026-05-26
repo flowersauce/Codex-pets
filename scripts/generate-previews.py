@@ -138,7 +138,11 @@ def generate_for_pet(
     background: str | tuple[int, int, int],
 ) -> None:
     manifest = load_pet_manifest(pet_dir)
-    pet_id = manifest["id"]
+    preview_id = pet_dir.name
+    pet_id = manifest.get("id", preview_id)
+    if pet_id != preview_id:
+        print(f"warning: {pet_dir}: pet.json id is {pet_id!r}; writing previews under {preview_id!r}")
+
     spritesheet = pet_dir / manifest.get("spritesheetPath", "spritesheet.webp")
     if not spritesheet.exists():
         raise FileNotFoundError(f"{pet_id}: missing spritesheet at {spritesheet}")
@@ -147,12 +151,12 @@ def generate_for_pet(
     if sheet.size != EXPECTED_SIZE:
         raise ValueError(f"{pet_id}: expected {EXPECTED_SIZE}, got {sheet.size}")
 
-    out_dir = root / "assets" / "previews" / pet_id
+    out_dir = root / "assets" / "previews" / preview_id
     out_dir.mkdir(parents=True, exist_ok=True)
     for row_index, (state, _label) in enumerate(STATES):
         save_state_gif(crop_state_frames(sheet, row_index), out_dir / f"{state}.gif", scale, duration, background)
     save_contact_sheet(sheet, out_dir / "contact-sheet.png", scale=1)
-    print(f"generated previews for {pet_id}")
+    print(f"generated previews for {preview_id}")
 
 
 def main() -> None:

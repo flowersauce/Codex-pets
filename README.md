@@ -6,9 +6,16 @@
 
 <table>
 <tr><th>Name</th><td colspan="5"><a href="pets/diana--flowersauce">Diana</a> · by <a href="https://github.com/flowersauce">@flowersauce</a></td></tr>
-<tr><th>About</th><td colspan="5"><a href="pets/diana--flowersauce"><code>pets/diana--flowersauce</code></a> · 粉白偶像风像素宠物，灵感来自 Diana/Jiaran。非官方粉丝作品。</td></tr>
+<tr><th>About</th><td colspan="5"><a href="pets/diana--flowersauce"><code>pets/diana--flowersauce</code></a> · 灵感来自 Diana/Jiaran。非官方粉丝作品。</td></tr>
 <tr><th>Action</th><td><strong>Idle</strong></td><td><strong>Running Right</strong></td><td><strong>Waving</strong></td><td><strong>Jumping</strong></td><td><strong>Review</strong></td></tr>
 <tr><th>Preview</th><td><img src="assets/previews/diana--flowersauce/idle.gif" alt="Diana idle" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/running-right.gif" alt="Diana running right" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/waving.gif" alt="Diana waving" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/jumping.gif" alt="Diana jumping" width="120" height="130"></td><td><img src="assets/previews/diana--flowersauce/review.gif" alt="Diana review" width="120" height="130"></td></tr>
+</table>
+
+<table>
+<tr><th>Name</th><td colspan="5"><a href="pets/kagura-nana--flowersauce">Kagura Nana</a> · by <a href="https://github.com/flowersauce">@flowersauce</a></td></tr>
+<tr><th>About</th><td colspan="5"><a href="pets/kagura-nana--flowersauce"><code>pets/kagura-nana--flowersauce</code></a> · 灵感来自虚拟偶像 Kagura Nana。非官方粉丝作品。</td></tr>
+<tr><th>Action</th><td><strong>Idle</strong></td><td><strong>Running Right</strong></td><td><strong>Waving</strong></td><td><strong>Jumping</strong></td><td><strong>Review</strong></td></tr>
+<tr><th>Preview</th><td><img src="assets/previews/kagura-nana--flowersauce/idle.gif" alt="Kagura Nana idle" width="120" height="130"></td><td><img src="assets/previews/kagura-nana--flowersauce/running-right.gif" alt="Kagura Nana running right" width="120" height="130"></td><td><img src="assets/previews/kagura-nana--flowersauce/waving.gif" alt="Kagura Nana waving" width="120" height="130"></td><td><img src="assets/previews/kagura-nana--flowersauce/jumping.gif" alt="Kagura Nana jumping" width="120" height="130"></td><td><img src="assets/previews/kagura-nana--flowersauce/review.gif" alt="Kagura Nana review" width="120" height="130"></td></tr>
 </table>
 
 ## 安装方式
@@ -34,6 +41,7 @@ pets/
 assets/
   previews/
     <pet-slug>--<author-slug>/
+      portrait.png
       idle.gif
       ...
       contact-sheet.png
@@ -55,7 +63,7 @@ docs/
 python scripts/generate-previews.py
 ```
 
-该脚本会为每只宠物生成全部九个 `192x208` 的棋盘格背景动作 GIF，并自动过滤透明占位帧。README 只挑选四个代表动作展示；生成的 `contact-sheet.png` 使用单格像素排成 `9x9`，其中第一列是动作名称，用来核对原始 atlas。
+该脚本会按 `pets/<pet-slug>--<author-slug>/` 的目录名自动创建对应的 `assets/previews/<pet-slug>--<author-slug>/`，并为每只宠物生成全部九个 `192x208` 的棋盘格背景动作 GIF，自动过滤透明占位帧。README 只挑选五个代表动作展示；生成的 `contact-sheet.png` 使用单格像素排成 `9x9`，其中第一列是动作名称，用来核对原始 atlas。
 
 检查宠物包结构：
 

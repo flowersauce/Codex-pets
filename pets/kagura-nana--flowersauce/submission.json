@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "petId": "kagura-nana--flowersauce",
+  "name": "Kagura Nana",
+  "author": {
+    "name": "flowersauce",
+    "github": "flowersauce",
+    "url": "https://github.com/flowersauce"
+  },
+  "language": "zh-CN",
+  "description": "灵感来自虚拟偶像 Kagura Nana。",
+  "tags": [
+    "pixel-art",
+    "idol",
+    "fan-art"
+  ],
+  "category": "fan-art",
+  "license": {
+    "code": "MIT",
+    "assets": "Author-provided fan-art asset. See ASSET-LICENSE.md; not an official Kagura Nana asset."
+  },
+  "files": {
+    "runtime": "pet.json",
+    "spritesheet": "spritesheet.webp",
+    "portrait": "../../assets/previews/kagura-nana--flowersauce/portrait.png",
+    "previews": "../../assets/previews/kagura-nana--flowersauce"
+  },
+  "createdAt": "2026-05-26"
+}

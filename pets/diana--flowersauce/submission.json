@@ -8,7 +8,7 @@
     "url": "https://github.com/flowersauce"
   },
   "language": "zh-CN",
-  "description": "粉白偶像风像素宠物，灵感来自 Diana/Jiaran。",
+  "description": "灵感来自 Diana/Jiaran。",
   "tags": [
     "pixel-art",
     "idol",
@@ -22,6 +22,7 @@
   "files": {
     "runtime": "pet.json",
     "spritesheet": "spritesheet.webp",
+    "portrait": "../../assets/previews/diana--flowersauce/portrait.png",
     "previews": "../../assets/previews/diana--flowersauce"
   },
   "createdAt": "2026-05-25"
